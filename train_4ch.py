@@ -235,9 +235,9 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='region gan')
 
     parser.add_argument('--path', type=str, default='../lmdbs/art_landscape_1k', help='path of resource dataset, should be a folder that has one or many sub image folders inside')
-    parser.add_argument('--cuda', type=int, default=1, help='index of gpu to use')
+    parser.add_argument('--cuda', type=int, default=0, help='index of gpu to use')
     parser.add_argument('--name', type=str, default='test_4ch_num_img_5', help='experiment name')
-    parser.add_argument('--iter', type=int, default=50000, help='number of iterations')
+    parser.add_argument('--iter', type=int, default=5000, help='number of iterations')
     parser.add_argument('--start_iter', type=int, default=0, help='the iteration to start training')
     parser.add_argument('--batch_size', type=int, default=4, help='mini batch number of images')
     parser.add_argument('--im_size', type=int, default=256, help='image resolution')
